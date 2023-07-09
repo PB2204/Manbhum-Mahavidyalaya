@@ -1,0 +1,1843 @@
+@charset "utf-8";
+/* @import 'https:fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i'; */
+/* @import 'https:fonts.googleapis.com/css?family=Montserrat:400,700'; */
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    /* width */
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    /* Track */
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    /* Handle */
+    background: rgb(110, 110, 110);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    /* Handle on hover */
+    background: rgb(110, 110, 110);
+}
+
+::-webkit-scrollbar-track-piece {
+    /* not handle on */
+    background: rgb(1, 1, 1);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: url(http://www.manbhummv.ac.in/images/bg.jpg) repeat-x 0 0 #904420;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #24211d;
+}
+
+a {
+    outline: none;
+    color: #17883a;
+    text-decoration: none;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    border: 0;
+}
+
+a img {
+    border: none;
+}
+
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h10,
+h14,
+p,
+form {
+    margin: 0;
+    padding-top: 0;
+    padding-right: 0px;
+    padding-bottom: 0;
+    padding-left: 0px;
+}
+
+.spacer {
+    clear: both;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+
+ul li {
+    list-style-position: outside;
+    list-style-type: none;
+}
+
+h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 300;
+    padding-bottom: 15px;
+    color: #f58221;
+}
+
+h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 24px;
+    line-height: 25px;
+    font-weight: 300;
+    padding-bottom: 15px;
+    color: #f58221;
+}
+
+h3 {
+    font-size: 30px;
+    line-height: 34px;
+    color: #6d2615;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+}
+
+h10 {
+    font-size: 18px;
+    text-align: center;
+    background: #0066cc;
+    color: #fff;
+    line-height: 30px;
+    margin-bottom: 5px;
+    font-weight: normal;
+    padding: 0px;
+}
+
+h12 {
+    font-size: 10px;
+    text-align: center;
+    color: #0066cc;
+    line-height: 30px;
+    margin-bottom: 5px;
+    font-weight: normal;
+    padding: 0px;
+}
+
+h14 {
+    color: #004a94;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+h13 {
+    /* color:  #af0c05; */
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+h15 {
+    /* color:  #af0c05; */
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+h16 {
+    font-size: 10px;
+    text-align: center;
+    color: #0066cc;
+    line-height: 30px;
+    font-weight: normal;
+    padding: 0px;
+    padding-left: 30%;
+}
+
+h17 {
+    font-size: 10px;
+    text-align: center;
+    color: #af0c05;
+    line-height: 30px;
+    margin-bottom: 5px;
+    font-weight: normal;
+    padding: 0px;
+}
+
+/*header*/
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    background: url(http://www.manbhummv.ac.in/images/main-bg.jpg) repeat-y 50% 0;
+}
+
+.container {
+    /*width:964px;*/
+    width: 1200px;
+    height: fit-content;
+    border: 12px solid #ffffff;
+    margin: 0 auto;
+    background: url(http://www.manbhummv.ac.in/images/container-bg.jpg) repeat 0 0 #e1ddcd;
+    padding-top: 23px;
+}
+
+.banner-con {
+    width: 788px;
+    margin: 0 auto;
+    background: url(http://www.manbhummv.ac.in/images/banner-bg.jpg) repeat-y 50% 0 #6c371e;
+    padding-top: 23px;
+    position: relative;
+}
+
+.logoPanel {
+    width: 193px;
+    float: left;
+    height: 255px;
+    background: url(http://www.manbhummv.ac.in/images/logo-panel.jpg) no-repeat 0 0 #f28e37;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+.logoPanel img {
+    margin: 25px auto 25px auto;
+}
+
+.logoPanel span {
+    color: #f6cb9f;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.logoPanel a {
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.banner {
+    width: 595px;
+    float: right;
+    height: 255px;
+}
+
+.bx-wrapper .bx-pager {
+    display: none;
+}
+
+.education {
+    background: rgba(192, 92, 40, .9);
+    bottom: 0;
+    height: 112px;
+    position: absolute;
+    right: -87px;
+    width: 278px;
+}
+
+.education p {
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+    margin: 10px 0 0 20px;
+}
+
+/* navigation Start */
+.navpanel {
+    width: 568px;
+    background: url(http://www.manbhummv.ac.in/images/nav-panel.png) no-repeat 0 0;
+    height: 60px;
+    position: relative;
+    z-index: 50;
+    left: 129px;
+    top: -26px;
+}
+
+.navigation {
+    margin: 0 auto;
+}
+
+.navigation ul {
+    padding-top: 9px;
+    text-align: center;
+}
+
+.navigation ul li {
+    font-size: 13px;
+    line-height: 26px;
+    display: inline-block;
+    padding: 0 1px;
+    position: relative;
+    background: url(http://www.manbhummv.ac.in/images/nav-div.jpg) no-repeat 100% 50%;
+}
+
+.navigation ul li:first-child {
+    padding: 0 7px 0 0;
+}
+
+.navigation ul li:last-child {
+    background-image: none;
+}
+
+.navigation ul li a {
+    color: #231f20;
+    padding: 0 8px;
+    display: block;
+}
+
+.navigation ul li a:hover,
+.navigation ul li a.active {
+    color: #6f3929;
+}
+
+/*---------------------DROPDOWN START----------------------*/
+.navigation ul li ul {
+    position: absolute;
+    top: 26px;
+    background-color: #eaf6e2;
+    left: 8px;
+    width: 200px;
+    z-index: 50;
+    display: none;
+    padding: 5px;
+    text-align: left;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.navigation ul li ul li {
+    font-weight: normal;
+    padding: 0;
+    display: block;
+    background-image: none;
+    float: none;
+}
+
+.navigation ul li ul li a {
+    color: #231f20;
+    display: block;
+    padding: 0 5px;
+}
+
+.navigation ul li ul li a:hover {
+    background-color: #f58f34;
+    color: #fff;
+}
+
+/* navigation End */
+.body-panel {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    margin-top: -60px;
+    margin-bottom: 40px;
+    margin-right: 11%;
+}
+
+.left-panel {
+    width: 133px;
+    float: left;
+    margin-right: 10px;
+    padding-left: 80px;
+}
+
+ul.left-nav {
+    margin-top: 40px;
+    text-align: center;
+}
+
+ul.left-nav li {
+    font-size: 13px;
+    line-height: 17px;
+    border-bottom: 1px solid #a38353;
+    padding: 8px 0;
+}
+
+ul.left-nav li a {
+    color: #231f20;
+    padding: 0 8px;
+    display: block;
+}
+
+ul.left-nav li a:hover,
+ul.left-nav li a.active {
+    color: #6f3929;
+}
+
+.middle-panel {
+    width: 560px;
+    float: left;
+    margin-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100px !important;
+}
+
+.welcome-panel {
+    margin-bottom: 40px;
+}
+
+.about-top {
+    height: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.about-top img {
+    float: left;
+}
+
+.about-top h3 {
+    float: left;
+    margin-top: 15px;
+    margin-left: 12px;
+}
+
+.about-top h3 span {
+    display: block;
+    margin-left: 15px;
+}
+
+.welcome-panel p {
+    text-align: justify;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+/*Facilities Start*/
+.facilities {
+    padding: 20px 0 30px 0;
+    position: relative;
+    border-top: 1px solid #a77439;
+}
+
+.facilities .bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: -38px !important;
+    margin-top: 0 !important;
+}
+
+.facilities .bx-wrapper .bx-prev {
+    left: 440px;
+    background: url(http://www.manbhummv.ac.in/images/next.jpg) no-repeat 0 0 !important;
+}
+
+.facilities .bx-wrapper .bx-next {
+    right: 0;
+    background: url(http://www.manbhummv.ac.in/images/prev.jpg) no-repeat 0 0 !important;
+}
+
+.bottom-panel {
+    padding-bottom: 40px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bottom-panel {
+    text-align: center;
+}
+
+.bottom-panel ul {
+    padding: 0;
+}
+
+.bottom-panel ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.bottom-panel ul li img {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 12px;
+}
+
+.bottom-panel ul li a:hover {
+    color: #6e3115;
+}
+
+/* right-panel Start*/
+.right-panel {
+    width: 246px;
+    float: left;
+    background: rgba(240, 237, 228, .6);
+    padding: 40px 18px 0 14px;
+}
+
+.notice {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.notice ul {
+    padding: 0;
+}
+
+.notice ul li {
+    padding: 3px 0 3px 17px;
+    background: url(http://www.manbhummv.ac.in/images/bullet-l.png) no-repeat 0 10px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.notice ul li a {
+    color: #2a2a2a;
+}
+
+.notice ul li a:hover {
+    color: #163677;
+    text-decoration: underline;
+}
+
+.footer {
+    width: auto;
+    padding: 10px 0;
+    padding-top: 15px;
+    height: 27px;
+    /* background: url(http://www.manbhummv.ac.in/images/footer.jpg) no-repeat 0 0; */
+    background-color: #990066;
+    position: relative;
+    /* margin: -30px auto 0 auto; */
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+
+.footer a {
+    color: chartreuse;
+    text-decoration: none;
+    font-family: cursive;
+    font-size: 25px;
+}
+
+.middle-panel-others {
+    width: 100%;
+    float: left;
+    margin-top: 40px;
+
+
+    /* height:100px; */
+    min-height: 700px;
+    padding-right: 1px;
+    padding-left: 10px;
+}
+
+.middle-panel-others h4 {
+    font-size: 18px;
+    text-align: center;
+    background: #0066cc;
+    color: #fff;
+    line-height: 30px;
+    margin-bottom: 5px;
+    font-weight: normal;
+    padding: 0px;
+}
+
+
+.query {
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid #d5d5d5;
+    background-color: #efefef;
+}
+
+.query div.query-contac {
+    height: 100%;
+    overflow: hidden;
+    margin-bottom: 9px;
+}
+
+.query div.left {
+    width: 40%;
+    float: left;
+}
+
+.query div.right {
+    width: 55%;
+    float: right;
+}
+
+.query label {
+    width: 20%;
+}
+
+.query h14 {
+    text-align: left;
+}
+
+.query input[type=text] {
+    border: 1px solid #d5d5d5;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    height: 27px;
+    width: 100%;
+}
+
+.query input[type=text] {
+    border: 1px solid #d5d5d5;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    height: 27px;
+    width: 100%;
+}
+
+.query textarea {
+    border: 1px solid #d5d5d5;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+
+.query select {
+    /* background:#2a9ad4; */
+    border: 0 none;
+    border-radius: 5px;
+    height: 25px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.query input[type=submit]:hover {
+    background-color: #c05e00;
+}
+
+.madetory {
+    display: inline;
+    height: 6px;
+    width: 6px;
+    vertical-align: middle;
+}
+
+.bullet {
+    display: inline;
+    height: 15px;
+    width: 15px;
+    vertical-align: middle;
+}
+
+.borbtm {
+    border-bottom: 1px solid #d0ccc9;
+    margin: 15px 0;
+}
+
+.body-content {
+    height: 100%;
+    overflow: hidden;
+    padding-top: 15px;
+}
+
+
+.query {
+    margin-top: 10px;
+    margin-left: 77px;
+    margin-right: 96px;
+}
+
+.content-panel {
+    height: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid #d5d5d5;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.cotent_line {
+
+    width: 100%;
+    height: 1px;
+    background: #7DB1EC;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content-panel p {
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+.content-panel:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.middle {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content-panel table {
+    border-collapse: collapse;
+}
+
+.content-panel table,
+.content-panel th,
+.content-panel td {
+    /* border: 1px solid #d5d5d5; */
+}
+
+.content-panel th,
+.content-panel td {
+    padding: 0.5em 1em;
+}
+
+.content-panel th {
+    background-color: #a7d1ee;
+    color: #000;
+    text-align: left;
+    vertical-align: bottom;
+    border-right: 1px solid #6097bd;
+}
+
+.content-panel tr:nth-child(odd) {
+    /* background-color:#e8e8e8; */
+}
+
+.content-panel h3 {
+    font-size: 18px;
+    text-align: center;
+    background: #ffba4c;
+    color: #fff;
+    line-height: 30px;
+    margin-bottom: 5px;
+    font-weight: normal;
+    padding: 0;
+}
+
+.content-panel h4 {
+    font-size: 18px;
+    text-align: center;
+    background: #0066cc;
+    color: #fff;
+    line-height: 30px;
+    margin-bottom: 5px;
+    font-weight: normal;
+    padding: 0;
+}
+
+.left-panel-inner {
+    width: 665px;
+    float: left;
+    min-height: 500px;
+}
+
+content-panel-table {
+    height: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid #d5d5d5;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    padding-left: 32px;
+    padding-right: 10px;
+}
+
+.content-panel-table h3 {
+    font-size: 18px;
+    text-align: center;
+    background: #0066cc;
+    color: #fff;
+    line-height: 30px;
+    margin-bottom: 5px;
+    font-weight: normal;
+    padding: 0;
+}
+
+.special-table {
+    height: 100%;
+    /* overflow:hidden; */
+    border-bottom: 1px solid #d5d5d5;
+    /* padding-bottom:25px; */
+    margin-bottom: 25px;
+    padding-left: 130px;
+    /* padding-right: 10px; */
+}
+
+p1 {
+    padding-top: 0;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 160px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 1in;
+    margin-left: 0;
+
+
+}
+
+.listpat {
+    padding-top: 0;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+    margin-left: 0;
+
+
+}
+
+.pat1 {
+
+    margin: 0;
+    padding-top: 0;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+     /* border-image-repeat:  round; */
+    border-style: double;
+
+}
+
+.content-panel-notice {
+    height: 100%;
+    overflow: hidden;
+    /* border-bottom:1px solid #d5d5d5; */
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    padding-left: 60px;
+}
+
+.content-panel-notice img {
+    border: 1px solid #d5d5d5;
+    padding: 5px;
+    width: 305px;
+    height: 215px;
+}
+
+.content-panel-notice p {
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+.content-panel-notice:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.content-panel-notice table {
+    border-collapse: collapse;
+}
+
+.content-panel-notice table,
+.content-panel-notice th {
+    border: 1px solid #2a2a2a;
+}
+
+.content-panel-notice th,
+.content-panel-notice td {
+    padding: 0.5em 1em;
+}
+
+.content-panel-notice th {
+    background-color: #a7d1ee;
+    color: #000;
+    text-align: left;
+    vertical-align: bottom;
+    border-right: 1px solid #6097bd;
+}
+
+.content-panel-notice tr:nth-child(odd) {
+    background-color: #e8e8e8;
+}
+
+.content-panel-notice h3 {
+    font-size: 18px;
+    text-align: center;
+    background: #ffba4c;
+    color: #fff;
+    line-height: 30px;
+    margin-bottom: 5px;
+    font-weight: normal;
+    padding: 0;
+}
+
+.scholarship {
+    margin-bottom: 25px;
+}
+
+.scholarship table {
+    border-collapse: collapse;
+}
+
+.scholarship .profile-caption {
+    color: #af0c05;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: left;
+}
+
+.scholarship table,
+.scholarship th,
+.scholarship td {
+    border: 1px solid #cc9912;
+}
+
+.scholarshipl th,
+.scholarship td {
+    padding: 0.5em 1em;
+}
+
+.scholarship th {
+    background-color: #a7d1ee;
+    color: #000;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 1px solid #cc9912;
+    padding: 5px 0;
+}
+
+.scholarship tr:nth-child(odd) {
+    background-color: #fff3d4;
+}
+
+.scholarship tr:hover {
+    background-color: #ffdc7e;
+}
+
+.news-content-details {
+    margin-top: 5px;
+    float: left;
+    position: relative;
+    width: 92%;
+    /* background-color:#ffffff; */
+    /* padding:25px; */
+
+}
+
+.img-faculty {
+    border: 5px solid #fff;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 143px;
+    float: right;
+}
+
+.img-teacherdesk {
+    border: 5px solid #fff;
+    margin-right: 30px;
+    width: 98px;
+    height: 127px;
+    float: left;
+}
+
+.techerdesk {
+    margin-top: 5px;
+    float: right;
+    position: relative;
+    height: 127px;
+    /* background-color:#ffffff; */
+    /* padding:25px; */
+
+}
+
+.news-events-panel {
+    padding: 0;
+}
+
+.news-events {
+    padding: 20px;
+    background: url(http://www.manbhummv.ac.in/images/pattern05.jpg) repeat 0 0;
+    margin-bottom: 25px;
+}
+
+.news-each {
+    height: 100%;
+    overflow: hidden;
+}
+
+.news-img {
+    border: 5px solid #fff;
+    margin-right: 30px;
+    width: 143px;
+    float: left;
+}
+
+
+
+
+/* define a fixed width for the entire menu */
+
+/* reset our lists to remove bullet points and padding */
+.mainmenu,
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* make ALL links (main and submenu) have padding and background color */
+.mainmenu a {
+    display: block;
+    /* background-color: #CCC; */
+    text-decoration: none;
+    padding: 10px;
+    color: #000;
+}
+
+/* add hover behaviour */
+.mainmenu a:hover {
+    background-color: #C5C5C5;
+}
+
+
+/* when hovering over a .mainmenu item,
+  display the submenu inside it.
+  we're changing the submenu's max-height from 0 to 200px;
+*/
+
+.mainmenu li:hover .submenu {
+    display: block;
+    max-height: 200px;
+}
+
+/*
+  we now overwrite the background-color for .submenu links only.
+  CSS reads down the page, so code at the bottom will overwrite the code at the top.
+*/
+
+.submenu a {
+    background-color: #999;
+}
+
+/* hover behaviour for links inside .submenu */
+.submenu a:hover {
+    background-color: #666;
+}
+
+/* this is the initial state of all submenus.
+  we set it to max-height: 0, and hide the overflowed content.
+*/
+.submenu {
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: all 0.5s ease-out;
+}
+
+.tab-panel {
+    height: 100%;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.tab-panel p {
+    margin-bottom: 0;
+}
+
+ul.inner-tabs {
+    list-style: none;
+    list-style-position: outside;
+}
+
+ul.inner-tabs li {
+    font-weight: 700;
+    display: block;
+    position: relative;
+    color: #f7f5e9;
+    cursor: pointer;
+    font-family: Georgia, Verdana;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: -1px;
+}
+
+ul.inner-tabs li a {
+    color: #f7f5e9;
+    padding: 5px 10px 5px 10px;
+    background: rgb(155, 187, 89);
+    border: 1px solid #d0ccc9;
+    border-width: 1px 1px 0 1px;
+    display: block;
+}
+
+ul.inner-tabs li a:hover,
+ul.inner-tabs li.active a {
+    background: #fff;
+    border-bottom: 0;
+    color: rgb(192, 0, 0);
+}
+
+.tab {
+    margin: 0pt auto;
+    background: #efefef;
+    background: #fff;
+    border: 1px solid #d0ccc9;
+    text-align: left;
+    padding: 15px;
+    padding-bottom: 20px;
+}
+
+.tab table {
+    border: 1px solid #d5d5d5;
+    border-width: 1px 1px 0 1px;
+}
+
+.tab table td {
+    border-left: 1px solid #d5d5d5;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.tab_notice {
+    margin: 0pt auto;
+    background: #e1dbcb;
+    /* border: 1px solid #d0ccc9; */
+    text-align: left;
+    padding: 15px;
+    padding-bottom: 20px;
+}
+
+.notice_design {
+    width: 100%;
+    background-color: #ffffff;
+    padding-left: 10px;
+    font-size: 12px;
+    font-style: italic;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.notice_design:hover {
+    box-shadow: 0px 0px 10px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.0);
+}
+
+.notice_date {
+    color: #904420;
+}
+
+.notice_space {
+    height: 10px;
+}
+
+.notice_line {
+    border-top: 1px solid #d0ccc9;
+
+}
+
+
+.login {
+    width: 320px;
+    margin: 0 auto;
+    font-size: 16px;
+    border: 1px solid #cecece;
+    padding: 25px;
+}
+
+.login input[type=text],
+.login input[type=password] {
+    border: 1px solid #d5d5d5;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    height: 28px;
+    width: 95%;
+}
+
+.login textarea {
+    border: 1px solid #d5d5d5;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    width: 95%;
+    height: 120px;
+}
+
+.login input[type=submit] {
+    background: #006600;
+    border: 0 none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.login input[type=submit]:hover {
+    background-color: red;
+}
+
+.opac {
+    width: 400px;
+    margin: 0 auto;
+    font-size: 16px;
+    border: 1px solid #cecece;
+    padding: 25px;
+}
+
+.opac input[type=text],
+.opac input[type=password] {
+    border: 1px solid #d5d5d5;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    height: 25px;
+    width: 95%;
+}
+
+.opac select {
+    border: 1px solid #d5d5d5;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    width: 95%;
+    height: 28px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.opac input[type=submit] {
+
+    background: #006600;
+    border: 0 none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.opac input[type=submit]:hover {
+    background-color: red;
+}
+
+.opac-query {
+    margin-bottom: 25px;
+    margin-right: 20px;
+    /* margin-bottom: 10%; */
+    /* padding-bottom: 10%; */
+    /* font-size:12px; */
+}
+
+.opac-query table {
+    border-collapse: collapse;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.opac-query .profile-caption {
+    color: #af0c05;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: left;
+}
+
+.opac-query table,
+.opac-query th,
+.opac-query td {
+    border: 1px solid #cc9912;
+}
+
+.opac-query th {
+    padding: 0.5em 1em;
+}
+
+.opac-query td {
+    padding: 0.2em 0.5em;
+}
+
+.opac-query th {
+    background-color: #a7d1ee;
+    color: #000;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 1px solid #cc9912;
+    padding: 5px 0;
+}
+
+.opac-query tr:nth-child(odd) {
+    background-color: #fff3d4;
+}
+
+.opac-query tr:hover {
+    background-color: #ffdc7e;
+}
+
+.opac_head {
+    /* width:400px; */
+    margin: 0 auto;
+    font-size: 16px;
+    /* border:1px solid #cecece; */
+    background-color: #ffdc7e;
+    float: left;
+    /* padding:25px; */
+}
+
+.opac_link {
+    /* width:400px; */
+    margin: 0 auto;
+    font-size: 16px;
+    /* border:1px solid #cecece; */
+    background-color: #e1ddcd;
+    margin-left: 10px;
+    float: right;
+    /* padding:25px; */
+}
+
+
+.feedback {
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid #d5d5d5;
+    background: rgba(240, 237, 228, .6);
+    ;
+}
+
+.feedback div.feedback-contac {
+    height: 100%;
+    overflow: hidden;
+    margin-bottom: 9px;
+}
+
+.feedback div.left {
+    width: 45%;
+    float: left;
+}
+
+.feedback div.right {
+    width: 45%;
+    float: right;
+}
+
+.feedback label {
+    width: 20%;
+    margin-right: 20px;
+
+}
+
+.feedback label1 {
+    width: 20%;
+    padding-left: 30px;
+    font-weight: bold;
+}
+
+.feedback h14 {
+    text-align: left;
+}
+
+.feedback input[type=text] {
+    border: 1px solid #d5d5d5;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    height: 27px;
+    width: 100%;
+}
+
+.feedback input[type=text] {
+    border: 1px solid #d5d5d5;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    height: 27px;
+    width: 100%;
+}
+
+.feedback textarea {
+    border: 1px solid #d5d5d5;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+
+.feedback select {
+    /* background:#2a9ad4; */
+    border: 0 none;
+    border-radius: 5px;
+    height: 25px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.feedback input[type=submit]:hover {
+    background-color: #c05e00;
+}
+
+.feedback {
+    margin-top: 10px;
+    margin-left: 77px;
+    margin-right: 96px;
+}
+
+.h_line {
+
+    width: 100%;
+    height: 1px;
+    background: #7DB1EC;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.feedback li {
+    padding: 3px 0 3px 17px;
+    background: url(http://www.manbhummv.ac.in/images/bullet_feedback.png) no-repeat 0 3px;
+    font-size: 14px;
+    line-height: 20px;
+    list-style-position: outside;
+    list-style-type: none;
+}
+
+.repository {
+    /* font-size:50px; */
+}
+
+.repository table {
+    border-collapse: collapse;
+    font-size: 12px;
+    font-family: Arial;
+}
+
+.repository table,
+th {
+    border: 1px solid #d5d5d5;
+}
+
+.repository th {
+    padding: 0.5em 0.5em;
+}
+
+.repository td {
+    padding: 0.1em 0.5em;
+}
+
+.repository th {
+    background-color: #a7d1ee;
+    color: #000;
+    text-align: left;
+    vertical-align: bottom;
+    border-right: 1px solid #6097bd;
+}
+
+/* /* -----------------------------Image-------------------- */ */
+
+.galleryBtm {
+    /* height:100%; */
+    /* width:10; */
+    overflow: hidden;
+}
+
+.galleryEach {
+    width: 250;
+    float: left;
+    margin: 0 10px 20px 10px;
+}
+
+.galleryImg {
+    padding: 4px;
+    border: 1px solid #d1d1d1;
+}
+
+.galleryImg img {
+    width: 250;
+    height: 150;
+}
+
+.galleryEach h4 {
+    font-size: 21px;
+    margin: 15px 0;
+    color: #5d5d5d;
+}
+
+.galleryBtm a:hover img {
+    opacity: .7
+}
+
+.galleryBtm a:hover .galleryImg {
+    border: 1px solid #1278d3;
+}
+
+.galleryBtm a:hover h4 {
+    color: #1278d3;
+}
+
+.content-panel-other {
+    height: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid #d5d5d5;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    padding-left: 30px;
+    padding-right: 60px;
+}
+
+.content-panel-other h3 {
+    font-size: 18px;
+    text-align: center;
+    background: #ffba4c;
+    color: #fff;
+    line-height: 30px;
+    margin-bottom: 5px;
+    font-weight: normal;
+    /* padding:0; */
+    padding-left: 30px;
+    margin-left: 14px;
+}
+
+.info_dvBody {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #AAA;
+    padding: 2px 10px;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    top: 0;
+    bottom: 184px;
+    border-color: Black;
+    background-color: White;
+    width: 700px;
+    height: auto;
+}
+
+/**** PORTFOLIO STYLES*****/
+.portfolio-content,
+.portfolio-area {
+    width: 1080px;
+}
+
+.title-page {
+    font-size: 40px;
+    margin: 50px 0px 60px 0px;
+    color: #151515;
+}
+
+.goto {
+    float: right;
+    width: 130px;
+    margin: -80px 30px 0px 0px;
+}
+
+.portfolio-categ {
+    margin-bottom: 30px;
+}
+
+.portfolio-categ li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.image-block {
+    display: block;
+    position: relative;
+}
+
+.image-block img {
+    border: 1px solid #d5d5d5;
+    border-radius: 4px 4px 4px 4px;
+    background: #FFFFFF;
+    padding: 10px;
+}
+
+.image-block img:hover {
+    border: 1px solid #A9CF54;
+    box-shadow: 0 0 5px #A9CF54;
+}
+
+.portfolio-area li {
+    float: left;
+    margin: 0 12px 20px 0;
+    overflow: hidden;
+    width: 245px;
+    padding: 5px;
+}
+
+.home-portfolio-text {
+    margin-top: 10px;
+}
+
+li.active a {
+    text-decoration: underline;
+}
+
+/**** END PORTFOLIO STYLES*****/
+
+
+/* /* --------------------------------------------Photo Gallery Div And Style------------------- */ */
+
+/* Page */
+
+#page {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+#page-bgtop {
+    padding: 20px;
+
+}
+
+/* Content */
+#content {
+    float: right;
+    width: 570px;
+    padding: 16px 0px 0px 0px;
+}
+
+.post {
+    margin-bottom: 15px;
+}
+
+.entry {
+    padding: 0px 0px 20px 0px;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+.post .entry table {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+/* Sidebar */
+
+#sidebar {
+    float: left;
+    width: 280px;
+    padding: 0px;
+    color: #000099;
+}
+
+#sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#sidebar li {
+    margin: 0;
+    padding: 0;
+    border-right: 1px solid #84C1FF;
+
+}
+
+#sidebar li ul {
+    margin: 0px 0px;
+    padding-bottom: 30px;
+}
+
+#sidebar li li {
+    line-height: 35px;
+    border-bottom: 1px dotted #84C1FF;
+    margin: 0px 30px;
+    border-right: none;
+}
+
+#sidebar li li.active a {
+    color: #6d2615;
+    text-decoration: none;
+
+}
+
+#sidebar li li span {
+    display: block;
+    margin-top: -20px;
+    padding: 0;
+    font-size: 11px;
+    font-style: italic;
+}
+
+#sidebar h2 {
+    padding-left: 30px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background: #84C1FF;
+    letter-spacing: -.5px;
+    font-size: 1.8em;
+    color: #000099;
+}
+
+#sidebar p {
+    margin: 0 0px;
+    padding: 10px 30px 20px 30px;
+    text-align: justify;
+}
+
+#sidebar a {
+    border: none;
+    color: #000099;
+}
+
+#sidebar a:hover {
+    text-decoration: underline;
+    color: #990066;
+}
+
+#tv {
+    width: 200px;
+    border-style: solid;
+}
+
+#tv {
+    width: 180px;
+    border-style: solid;
+    border-color: #1278d3;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    color: #ff6666;
+    font-weight: bold;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    margin-left: 40px;
+}
+
+#tv .style32 {
+    /* color:  #1278d3; */
+    /* border-style:  solid; */
+    /* margin-top: 10px; */
+    /* border-style: solid; */
+}
+
+
+#tv select {
+    width: 80px;
+    background: none;
+    border: 0 none;
+    font-size: 20px;
+    color: #ff6666;
+    font-weight: bold;
+    /* font-weight: bold; */
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    /* border-style:  solid; */
+    /* margin-top: 10px; */
+}
+
+
+.news-grid-left ol li {
+    list-style-type: square;
+    padding: 0;
+    border-bottom: none;
+}
+
+.journal-grid {
+    float: right;
+    width: 100%;
+    margin: 1em 0 0;
+}
+
+.journal-grid h4 {
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.journal-grid h4 a {
+    color: #51efe7;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.journal-grid h4 a:hover {
+    color: #1ABC9C;
+}
+
+.journal-grid h5 {
+    color: #000;
+    font-size: .8em;
+    /* margin: 0.8em 0 1em; */
+    font-weight: 400;
+}
+
+.journal-grid h5 a {
+    color: #1ABC9C;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.journal-grid h5 a:hover {
+    color: #000;
+}
+
+.journal-grid h5 label {
+    color: #D2D2D2;
+    padding: 0 .5em;
+}
+
+.journal-grid h5 i {
+    font-style: normal;
+    color: #C0C0C0;
+}
+
+.journal-grid p {
+    color: #000;
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.8em;
+    font-weight: 500;
+    font-family: arial;
+}
+
+.journal-grid a {
+
+    color: #064ef9;
+    font-family: arial;
+}
+
+.journal-grid a:hover {
+    text-decoration: underline;
+}
