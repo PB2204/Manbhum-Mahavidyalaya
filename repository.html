@@ -48,7 +48,7 @@
 
             var staff_key = '';
             $.ajax({
-                url: 'getList.php',
+                url: 'getList.html',
                 type: 'POST',
                 data: { 'department_key': department_key, 'staff_key': staff_key, 'ActionType': 'fetchTeacher' },
                 success: function (data) {
