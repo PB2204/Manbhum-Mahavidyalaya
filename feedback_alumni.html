@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to MANBHUM MAHAVIDYALAYA : Purulia</title>
+    <meta name="keywords"
+        content="manbhum college,manbhum,manbazar,purulia college,affiliated to skbu,affiliated to purulia university,skbu college,college of westbengal,skbu approved college" />
+    <meta name="description"
+        content="Manbhum Mahavidyalaya, established in 1986, is one of the pioneer educational institutes in the southern part of the Purulia district of West Bengal. It offers undergraduate courses in arts, commerce & science. It is affiliated to Sidho-Kanho-Birsha University." />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!-- Slider -->
+    <script src="js/jquery.bxslider.min.js"></script>
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+    <!-- Slider -->
+
+    <script type="text/javascript">
+
+        function validate() {
+            var extent = document.forms["forms"]["extent"].value;
+            if (isNaN(extent)) {
+                error = "<h12>Give the Integer Value</h12>";
+                document.getElementById("extent_out").innerHTML = error;
+                document.getElementById("extent").focus();
+                document.getElementById("extent").style.borderColor = "red";
+                return false;
+            }
+            else if (extent < 0 || extent > 6) {
+                error = "<h12>Give Approprite scale value<h12>";
+                document.getElementById("extent_out").innerHTML = error;
+                document.getElementById("extent").focus();
+                document.getElementById("extent").style.borderColor = "red";
+                return false;
+            } else {
+                document.getElementById("extent_out").innerHTML = "";
+                document.getElementById("extent").style.borderColor = "";
+            }
+
+
+            var development = document.forms["forms"]["development"].value;
+            if (isNaN(development)) {
+                error = "<h12>Give the Integer Value</h12>";
+                document.getElementById("development_out").innerHTML = error;
+                document.getElementById("development").focus();
+                document.getElementById("development").style.borderColor = "red";
+                return false;
+            }
+            else if (development < 0 || development > 6) {
+                error = "<h12>Give Approprite scale value<h12>";
+                document.getElementById("development_out").innerHTML = error;
+                document.getElementById("development").focus();
+                document.getElementById("development").style.borderColor = "red";
+                return false;
+            } else {
+                document.getElementById("development_out").innerHTML = "";
+                document.getElementById("development").style.borderColor = "";
+            }
+
+            var introduction = document.forms["forms"]["introduction"].value;
+            if (isNaN(introduction)) {
+                error = "<h12>Give the Integer Value</h12>";
+                document.getElementById("introduction_out").innerHTML = error;
+                document.getElementById("introduction").focus();
+                document.getElementById("introduction").style.borderColor = "red";
+                return false;
+            }
+            else if (introduction < 0 || introduction > 6) {
+                error = "<h12>Give Approprite scale value<h12>";
+                document.getElementById("introduction_out").innerHTML = error;
+                document.getElementById("introduction").focus();
+                document.getElementById("introduction").style.borderColor = "red";
+                return false;
+            } else {
+                document.getElementById("introduction_out").innerHTML = "";
+                document.getElementById("introduction").style.borderColor = "";
+            }
+            var college_future = document.forms["forms"]["college_future"].value;
+            if (isNaN(college_future)) {
+                error = "<h12>Give the Integer Value</h12>";
+                document.getElementById("college_future_out").innerHTML = error;
+                document.getElementById("college_future").focus();
+                document.getElementById("college_future").style.borderColor = "red";
+                return false;
+            }
+            else if (college_future < 0 || college_future > 6) {
+                error = "<h12>Give Approprite scale value<h12>";
+                document.getElementById("college_future_out").innerHTML = error;
+                document.getElementById("college_future").focus();
+                document.getElementById("college_future").style.borderColor = "red";
+                return false;
+            } else {
+                document.getElementById("college_future_out").innerHTML = "";
+                document.getElementById("college_future").style.borderColor = "";
+            }
+            var value_education = document.forms["forms"]["value_education"].value;
+            if (isNaN(value_education)) {
+                error = "<h12>Give the Integer Value</h12>";
+                document.getElementById("value_education_out").innerHTML = error;
+                document.getElementById("value_education").focus();
+                document.getElementById("value_education").style.borderColor = "red";
+                return false;
+            }
+            else if (value_education < 0 || value_education > 6) {
+                error = "<h12>Give Approprite scale value<h12>";
+                document.getElementById("value_education_out").innerHTML = error;
+                document.getElementById("value_education").focus();
+                document.getElementById("value_education").style.borderColor = "red";
+                return false;
+            } else {
+                document.getElementById("value_education_out").innerHTML = "";
+                document.getElementById("value_education").style.borderColor = "";
+            }
+            var college_rate = document.forms["forms"]["college_rate"].value;
+            if (isNaN(college_rate)) {
+                error = "<h12>Give the Integer Value</h12>";
+                document.getElementById("college_rate_out").innerHTML = error;
+                document.getElementById("college_rate").focus();
+                document.getElementById("college_rate").style.borderColor = "red";
+                return false;
+            }
+            else if (college_rate < 0 || college_rate > 6) {
+                error = "<h12>Give Approprite scale value<h12>";
+                document.getElementById("college_rate_out").innerHTML = error;
+                document.getElementById("college_rate").focus();
+                document.getElementById("college_rate").style.borderColor = "red";
+                return false;
+            } else {
+                document.getElementById("college_rate_out").innerHTML = "";
+                document.getElementById("college_rate").style.borderColor = "";
+            }
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+
+
+    <!--container Start -->
+    <div class="wrapper">
+        <div class="container">
+            <!--Banner Panlel Start -->
+            <div class="banner-con">
+                <!--logoPanel Start -->
+                <div class="logoPanel">
+                    <img src="images/logo.png" alt="">
+                    <span>Welcome to</span>
+                    <a href="index.php">MANBHUM<br>
+                        MAHAVIDYALAYA</a>
+                    Purulia
+                </div>
+                <!--logoPanel End-->
+                <!--Banner Start -->
+                <div class="banner">
+                    <ul class="bxslider">
+                        <li><img src="images/banner01.jpg" title="" /></li>
+                        <li><img src="images/banner02.jpg" title="" /></li>
+                        <li><img src="images/banner03.jpg" title="" /></li>
+                    </ul>
+                </div>
+                <!--Banner End -->
+                <!--education Start -->
+                <div class="education">
+                    <p><span style="font-size:30px">Education</span><br>
+                        <span style="margin-left:50px;">is a <span style="font-size:30px">journey</span></span><br>
+                        <span style="margin-left:140px;">not a race</span>
+                    </p>
+                </div>
+                <!--education End -->
+                <div class="spacer"></div>
+            </div>
+
+            <!--Banner Panlel End -->
+
+            <!--navpanel Start -->
+
+            <div class="navpanel">
+                <div class="navigation">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="#">About Us</a>
+                            <ul>
+                                <li><a href="history.html">History of the College</a></li>
+                                <li><a href="mission.html">Mission & Vision</a></li>
+                                <li><a href="files/GB_Manbhum_2020.pdf" target="_blank">Governing Body</a></li>
+                                <li><a href="sub_commitee.html">Committees/Cells</a></li>
+                                <li><a href="files/NTS_Manbhum.pdf" target="_blank">Administrative Staff</a></li>
+                                <li><a href="admin_calendar.html">Administrative Calendar</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Academic</a>
+                            <ul>
+                                <li><a href="department.html">Departments</a></li>
+                                <li><a href="faculty.html">Faculty</a></li>
+                                <li><a href="routine.html">Routine</a></li>
+                                <li><a href="onlineclass.html">Online Class Link</a></li>
+                                <li><a href="facility.html#seminar">Seminar / Workshops</a></li>
+                                <li><a href="collaboration.html">Collaborations</a></li>
+                                <li><a href="calendar.html">Academic Calendar</a></li>
+                                <li><a href="rules.html">Rules & Regulations</a></li>
+                                <li><a href="courses.html">Courses Offered</a></li>
+                                <li><a href="files/Fees.pdf" target="_blank">Course Fees</a></li>
+                                <li><a href="facility.html#stu_health">General Infrastructure</a></li>
+                                <li><a href="facility.html#magazine">Academic Infrastructure</a></li>
+                                <li><a href="office.html">Office</a></li>
+                                <li><a href="facility.html#nss">NSS</a></li>
+                                <li><a href="remedial.html">Remedial Coaching</a></li>
+                                <li><a href="service_coaching.html">Coaching for Service Entry</a></li>
+                                <li><a href="facility.html#stu_hostel">Student Hostel</a></li>
+                                <li><a href="facility.html#computer">Computer Literacy Program</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://iqac.manbhummv.ac.in/" target="_blank">IQAC & NAAC</a>
+                            <ul>
+                                <li><a href="iqac.html">IQAC Members</a></li>
+                                <li><a href="aqar.html">AQAR</a></li>
+                                <li><a href="files/SSR_ManbhumCollege.pdf" target="_blank">Self Study Report</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Student</a>
+                            <ul>
+                                <li><a href="studenthelpnumbers.html">Student Help Numbers</a></li>
+                                <li><a href="facility.html#stu_union">Students' Union</a></li>
+                                <li><a href="online_grievance.html">On-Line Grievance Redressal</a></li>
+                                <li><a href="https://iqac.manbhummv.ac.in/2021/11/27/office-for-students/"
+                                        target="_blank">Office for Students</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="notice.html" target="_blank">Notice</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--navpanel End -->
+
+            <div class="body-panel">
+                <!--left-panel Start -->
+
+                <!--left-panel End -->
+                <!--middle-panel Start -->
+                <div class="middle-panel-others">
+
+                    <div class="feedback">
+                        <h14>Alumni Feedback</h14>
+                        <div style="clear: both;">&nbsp;</div>
+
+                        <form id="forms" action="" method="POST" onSubmit="return validate();">
+
+                            <div class="feedback-contac">
+                                <div class="left">
+                                    <label for="Ex Student Name">Name of the Ex-Student <img alt="" class="madetory"
+                                            src="images/star.png"></label></label>
+                                    <input name="ex_student" type="text" maxlength="100" required>
+                                </div>
+
+                                <div class="right">
+                                    <label for="Phone">Mobile / Phone <img alt="" class="madetory"
+                                            src="images/star.png"></label>
+                                    <input name="Phone" type="text" maxlength="10" required>
+                                </div>
+                            </div>
+                            <div class="feedback-contac">
+                                <div class="left">
+                                    <label for="Course Attended">Course Attended <img alt="" class="madetory"
+                                            src="images/star.png"></label></label>
+                                    <select name="courseKey" id="select" required>
+                                        <option value="" selected="selected">- Select -</option>
+                                        <option value="1">BA PROGRAMME</option>
+                                        <option value="4">BCOM HONOURS(ACCOUNTANCY)</option>
+                                        <option value="2">BCOM PROGRAMME</option>
+                                        <option value="9">BENGALI HONS.</option>
+                                        <option value="3">BSC PROGRAMME</option>
+                                        <option value="15">BUSINESS ADMINISTRATION HONOURS</option>
+                                        <option value="12">COMP. SC. ( HONS.)</option>
+                                        <option value="7">ECONOMICS HONS.</option>
+                                        <option value="6">ENGLISH HONS.</option>
+                                        <option value="5">GEOGRAPHY HONS.</option>
+                                        <option value="11">HISTORY (HONS.)</option>
+                                        <option value="14">MATHEMATICS (HONS.)</option>
+                                        <option value="8">POLITICAL SC. HONS.</option>
+                                        <option value="13">SANTALI (HONS.)</option>
+                                    </select>
+                                </div>
+
+                                <div class="right">
+                                    <label for="Year of 1st Year Admission">Year of 1st Year Admission <img alt=""
+                                            class="madetory" src="images/star.png"></label>
+                                    <input name="admission_year" type="text" maxlength="10" required>
+                                </div>
+                            </div>
+                            <div class="feedback-contac">
+                                <div class="left">
+                                    <label for="University Reg No.">University Reg No.</label>
+                                    <input name="regno" type="text" maxlength="100">
+                                </div>
+                                <div class="right">
+                                    <label for="Email">Email Id</label>
+                                    <input name="Email" type="text" maxlength="50">
+                                </div>
+                            </div>
+
+                            <table align="left" width="45%" border="0" bgcolor="#DEDDC9" cellspacing="0"
+                                cellpadding="0">
+                                <tr>
+                                    <td>
+                                        <h13>Present Status <img alt="" class="madetory" src="images/star.png"></h13>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="clear: both;">&nbsp;</div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input name="student_status" type="radio" value="further_study" required>
+                                        Further Study&nbsp;&nbsp;&nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="clear: both;">&nbsp;</div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input name="student_status" type="radio" value="employed">
+                                        Employed&nbsp;&nbsp;&nbsp;
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="clear: both;">&nbsp;</div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input name="student_status" type="radio" value="self_employed">
+                                        Self-Employed&nbsp;&nbsp;&nbsp;
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="clear: both;">&nbsp;</div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input name="student_status" type="radio" value="job_seeker">
+                                        Job Seeker&nbsp;&nbsp;&nbsp;
+                                    </td>
+                                </tr>
+
+                            </table>
+
+
+
+                            <table align="right" width="55%" border="0" bgcolor="#DEDDC9" cellspacing="0"
+                                cellpadding="0">
+                                <tr>
+                                    <td>
+                                        <h15>Give Details</h15>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="99%" align="left" valign="top">
+                                        <textarea name="details" cols="" rows="" maxlength="2000"></textarea>
+                                    </td>
+                                    <td align="right" valign="top">
+                                    </td>
+                                </tr>
+                            </table>
+
+
+
+                            <div style="clear: both;">&nbsp;</div>
+
+
+                            <div align="center">
+                                <table width="50%" border="0" bgcolor="#DEDDC9" cellspacing="0" cellpadding="0">
+                                    <thead>
+                                        <th colspan="3">
+                                            Feedback Scale
+                                        </th>
+                                    </thead>
+                                    <tr>
+                                        <td align="left" valign="top">
+                                            <li>No Comments</li>
+                                        </td>
+                                        <td align="right" valign="top">
+                                            <img src="images/bullet_right.png" class="bullet"
+                                                style="padding-bottom: 3px">
+                                        </td>
+                                        <td align="right" valign="top">
+                                            0
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" valign="top">
+                                            <li>Very poor(1 to 10%)</li>
+                                        </td>
+                                        <td align="right" valign="top">
+                                            <img src="images/bullet_right.png" class="bullet"
+                                                style="padding-bottom: 3px">
+                                        </td>
+                                        <td align="right" valign="top">
+                                            1
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" valign="top">
+                                            <li>Poor(11 to 20%)</li>
+                                        </td>
+                                        <td align="right" valign="top">
+                                            <img src="images/bullet_right.png" class="bullet"
+                                                style="padding-bottom: 3px">
+                                        </td>
+                                        <td align="right" valign="top">
+                                            2
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" valign="top">
+                                            <li>Fair(21 to 40%)</li>
+                                        </td>
+                                        <td align="right" valign="top">
+                                            <img src="images/bullet_right.png" class="bullet"
+                                                style="padding-bottom: 3px">
+                                        </td>
+                                        <td align="right" valign="top">
+                                            3
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" valign="top">
+                                            <li>Good(41 to 60%)</li>
+                                        </td>
+                                        <td align="right" valign="top">
+                                            <img src="images/bullet_right.png" class="bullet"
+                                                style="padding-bottom: 3px">
+                                        </td>
+                                        <td align="right" valign="top">
+                                            4
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" valign="top">
+                                            <li>Very Good(61 to 80%)</li>
+                                        </td>
+                                        <td align="right" valign="top">
+                                            <img src="images/bullet_right.png" class="bullet"
+                                                style="padding-bottom: 3px">
+                                        </td>
+                                        <td align="right" valign="top">
+                                            5
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" valign="top">
+                                            <li>Extremely Good(81 & more)</li>
+                                        </td>
+                                        <td align="right" valign="top">
+                                            <img src="images/bullet_right.png" class="bullet"
+                                                style="padding-bottom: 3px">
+                                        </td>
+                                        <td align="right" valign="top">
+                                            6
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </div>
+
+                            <div align="center">
+                                <table width="100%" border="0" bgcolor="#EACFBF" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td align="left" colspan="3">
+                                            <h4>(PROVIDED SCORES AS PER THE FEED BACK SCALE IN THE BOX)</h4>
+
+                                        </td>
+                                    </tr>
+                                    <div style="clear: both;">&nbsp;</div>
+
+                                    <tr>
+                                        <td align="left" width="30%" valign="top">
+                                            <li>Extent of usefulness of the learning I had in this College</li>
+                                        </td>
+                                        <td align="left" width="2%" valign="top">
+                                            <input type="text" id="extent" name="extent" />
+                                        </td>
+                                        <td align="center" width="10%" valign="top">
+                                            <p id="extent_out"></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" width="30%" valign="top">
+                                            <li>Over-all development of the College since your passing out</li>
+                                        </td>
+                                        <td align="left" width="2%" valign="top">
+                                            <input type="text" id="development" name="development" />
+                                        </td>
+                                        <td align="center" width="10%" valign="top">
+                                            <p id="development_out"></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" width="30%" valign="top">
+                                            <li>Nature of introduction new courses and subjects</li>
+                                        </td>
+                                        <td align="left" width="2%" valign="top">
+                                            <input type="text" id="introduction" name="introduction" />
+                                        </td>
+                                        <td align="center" width="10%" valign="top">
+                                            <p id="introduction_out"></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" width="30%" valign="top">
+                                            <li>How do your rate the future of this College ?</li>
+                                        </td>
+                                        <td align="left" width="2%" valign="top">
+                                            <input type="text" id="college_future" name="college_future" />
+                                        </td>
+                                        <td align="center" width="10%" valign="top">
+                                            <p id="college_future_out"></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" width="30%" valign="top">
+                                            <li>How the value education you had helping you in the life?</li>
+                                        </td>
+                                        <td align="left" width="2%" valign="top">
+                                            <input type="text" id="value_education" name="value_education" />
+                                        </td>
+                                        <td align="center" width="10%" valign="top">
+                                            <p id="value_education_out"></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" width="30%" valign="top">
+                                            <li>How do you rate the College?</li>
+                                        </td>
+                                        <td align="left" width="2%" valign="top">
+                                            <input type="text" id="college_rate" name="college_rate" />
+                                        </td>
+                                        <td align="center" width="10%" valign="top">
+                                            <p id="college_rate_out"></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="100%" colspan="3">
+                                            <div class="h_line"></div>
+                                        </td>
+                                    </tr>
+                                    <table width="100%" border="0" bgcolor="#EACFBF" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td align="left" width="25%" valign="top" colspan="6">
+                                                <li>Please tick if you are successful in the following-</li>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" width="25%" valign="top" colspan="6">
+                                                <div style="clear: both;">&nbsp;</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20%" align="left" valign="top">
+                                                P.G.
+                                            </td>
+                                            <td width="5%" align="left" valign="top">
+                                                <input type="checkbox" name="pg" value="Yes" />
+                                            </td>
+                                            <td width="20%" align="left" valign="top">
+                                                M.Phil
+                                            </td>
+                                            <td width="5%" align="left" valign="top">
+                                                <input type="checkbox" name="mphil" value="Yes" />
+                                            </td>
+                                            <td width="20%" align="left" valign="top">
+                                                GOT PROFESSIONAL DEGREE
+                                            </td>
+                                            <td width="5%" align="right" valign="top">
+                                                <input type="checkbox" name="degree" value="Yes" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20%" align="left" valign="top">
+                                                NET/SET
+                                            </td>
+                                            <td width="5%" align="left" valign="top">
+                                                <input type="checkbox" name="net" value="Yes" />
+                                            </td>
+                                            <td width="20%" align="left" valign="top">
+                                                CIVIL SERVICE EXAM.
+                                            </td>
+                                            <td width="5%" align="left" valign="top">
+                                                <input type="checkbox" name="civil_exam" value="Yes" />
+                                            </td>
+                                            <td width="20%" align="left" valign="top">
+                                            </td>
+                                            <td width="5%" align="right" valign="top">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20%" align="left" valign="top">
+                                                Ph. D
+                                            </td>
+                                            <td width="5%" align="left" valign="top">
+                                                <input type="checkbox" name="phd" value="Yes" />
+                                            </td>
+                                            <td width="20%" align="left" valign="top">
+                                                SPORTS PERSONALITY
+                                            </td>
+                                            <td width="5%" align="left" valign="top">
+                                                <input type="checkbox" name="sports" value="Yes" />
+                                            </td>
+                                            <td width="20%" align="left" valign="top">
+                                            </td>
+                                            <td width="5%" align="right" valign="top">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </table>
+
+                            </div>
+                            <div style="clear: both;">&nbsp;</div>
+
+                            <div class="query-contac">
+                                <label for="Message"><b>Comment/Suggestions,if any </b></label>
+                                <textarea name="Message" cols="" rows="" maxlength="2000"></textarea>
+                            </div>
+
+                            <input name="submit" type="submit" value="Submit">
+                        </form>
+                        <div style="clear: both;">&nbsp;</div>
+
+
+                    </div>
+
+                </div>
+                <!--middle-panel End -->
+            </div>
+
+            <!--footer start-->
+        </div>
+        <div class="footer">Developed By :: <a href="https://pabitrabanerjee.newsgoogle.org"><span>Pabitra
+                    Banerjee</span></a> || Made With ❤️</div>
+    </div>
+
+    <!--footer end-->
+
+</body>
+
+</html>

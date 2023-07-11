@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to MANBHUM MAHAVIDYALAYA : Purulia</title>
+    <meta name="keywords"
+        content="manbhum college,manbhum,manbazar,purulia college,affiliated to skbu,affiliated to purulia university,skbu college,college of westbengal,skbu approved college" />
+    <meta name="description"
+        content="Manbhum Mahavidyalaya, established in 1986, is one of the pioneer educational institutes in the southern part of the Purulia district of West Bengal. It offers undergraduate courses in arts, commerce & science. It is affiliated to Sidho-Kanho-Birsha University." />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+
+    <!-- Slider -->
+    <script src="js/jquery.bxslider.min.js"></script>
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+    <script type="text/javascript" src="src/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="src/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="src/underscore-1.7.0.min.js"></script>
+    <script type="text/javascript" src="src/jquery.validationEngine-en.js" charset="utf-8"></script>
+    <script type="text/javascript" src="src/jquery.validationEngine.js" charset="utf-8"></script>
+    <script type="text/javascript" src="src/tabs.js"></script>
+    <script type="text/javascript" src="js/print.js"></script>
+    <script type="text/javascript" src="js/report.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!-- Slider -->
+
+    <script>
+        $(document).ready(function (e) {
+            var department_key = $(".department option:selected").val();
+            if (department_key != null && department_key != "") {
+                change_staff_key(department_key);
+            }
+
+            $('.department').change(function () {
+                var department_key = $(".department option:selected").val();
+                change_staff_key(department_key);
+            });
+        });
+        function change_staff_key(department_key) {
+
+            var staff_key = '';
+            $.ajax({
+                url: 'getList.php',
+                type: 'POST',
+                data: { 'department_key': department_key, 'staff_key': staff_key, 'ActionType': 'fetchTeacher' },
+                success: function (data) {
+                    $('#staff_key').html(data);
+                    if (staff_key != null && staff_key != "") {
+                        $(".staff_key option:selected").val(staff_key);
+                    }
+                },
+                error: function () { }
+            });
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <!--container Start -->
+    <div class="wrapper">
+        <div class="container">
+            <!--Banner Panlel Start -->
+            <div class="banner-con">
+                <!--logoPanel Start -->
+                <div class="logoPanel">
+                    <img src="images/logo.png" alt="">
+                    <span>Welcome to</span>
+                    <a href="index.html">MANBHUM<br>
+                        MAHAVIDYALAYA</a>
+                    Purulia
+                </div>
+                <!--logoPanel End-->
+                <!--Banner Start -->
+                <div class="banner">
+                    <ul class="bxslider">
+                        <li><img src="images/banner01.jpg" title="" /></li>
+                        <li><img src="images/banner02.jpg" title="" /></li>
+                        <li><img src="images/banner03.jpg" title="" /></li>
+                    </ul>
+                </div>
+                <!--Banner End -->
+                <!--education Start -->
+                <div class="education">
+                    <p><span style="font-size:30px">Education</span><br>
+                        <span style="margin-left:50px;">is a <span style="font-size:30px">journey</span></span><br>
+                        <span style="margin-left:140px;">not a race</span>
+                    </p>
+                </div>
+                <!--education End -->
+                <div class="spacer"></div>
+            </div>
+
+            <!--Banner Panlel End -->
+            <!--navpanel Start -->
+
+            <div class="navpanel">
+                <div class="navigation">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="#">About Us</a>
+                            <ul>
+                                <li><a href="history.html">History of the College</a></li>
+                                <li><a href="mission.html">Mission & Vision</a></li>
+                                <li><a href="files/GB_Manbhum_2020.pdf" target="_blank">Governing Body</a></li>
+                                <li><a href="sub_commitee.html">Committees/Cells</a></li>
+                                <li><a href="files/NTS_Manbhum.pdf" target="_blank">Administrative Staff</a></li>
+                                <li><a href="admin_calendar.html">Administrative Calendar</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Academic</a>
+                            <ul>
+                                <li><a href="department.html">Departments</a></li>
+                                <li><a href="faculty.html">Faculty</a></li>
+                                <li><a href="routine.html">Routine</a></li>
+                                <li><a href="onlineclass.html">Online Class Link</a></li>
+                                <li><a href="facility.html#seminar">Seminar / Workshops</a></li>
+                                <li><a href="collaboration.html">Collaborations</a></li>
+                                <li><a href="calendar.html">Academic Calendar</a></li>
+                                <li><a href="rules.html">Rules & Regulations</a></li>
+                                <li><a href="courses.html">Courses Offered</a></li>
+                                <li><a href="files/Fees.pdf" target="_blank">Course Fees</a></li>
+                                <li><a href="facility.html#stu_health">General Infrastructure</a></li>
+                                <li><a href="facility.html#magazine">Academic Infrastructure</a></li>
+                                <li><a href="office.html">Office</a></li>
+                                <li><a href="facility.html#nss">NSS</a></li>
+                                <li><a href="remedial.html">Remedial Coaching</a></li>
+                                <li><a href="service_coaching.html">Coaching for Service Entry</a></li>
+                                <li><a href="facility.html#stu_hostel">Student Hostel</a></li>
+                                <li><a href="facility.html#computer">Computer Literacy Program</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://iqac.manbhummv.ac.in/" target="_blank">IQAC & NAAC</a>
+                            <ul>
+                                <li><a href="iqac.html">IQAC Members</a></li>
+                                <li><a href="aqar.html">AQAR</a></li>
+                                <li><a href="files/SSR_ManbhumCollege.pdf" target="_blank">Self Study Report</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Student</a>
+                            <ul>
+                                <li><a href="studenthelpnumbers.html">Student Help Numbers</a></li>
+                                <li><a href="facility.html#stu_union">Students' Union</a></li>
+                                <li><a href="online_grievance.html">On-Line Grievance Redressal</a></li>
+                                <li><a href="https://iqac.manbhummv.ac.in/2021/11/27/office-for-students/"
+                                        target="_blank">Office for Students</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="notice.html" target="_blank">Notice</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--navpanel End -->
+            <br>
+            <h4 style="color:red;margin-left: 5em;">Disclaimer : These are study materials meant for only the students
+                of Manbhum Mahavidyalaya And not for general circulation.</h4>
+
+            <br>
+
+            <div class="body-panel" style="margin-left: 0px;">
+                <!--left-panel Start -->
+
+                <!--left-panel End -->
+                <!--middle-panel Start -->
+                <div class="middle-panel-others" style="min-height: fit-content !important;">
+
+                    <div class="content-panel"">
+                        <div class="tab-panel">
+                            <ul class="inner-tabs">
+                                <li><a href="#tab1">Departmental Syllabus</a></li>
+                                <li><a href="#tab2">Previous Year Question</a></li>
+                                <li><a href="#tab3" style="display: none;">Study Material</a></li>
+                            </ul>
+
+                            <div class="spacer"></div>
+
+                            <div id="tab1" class="tab">
+                                <div class="repository">
+                                    <table width="100%" border="1" align="center">
+                                        <thead>
+                                            <th>Sl No.</th>
+                                            <th>Department</th>
+                                            <th>Course</th>
+                                            <th>View</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td height="1px">1
+                                                <td>Bengali</td>
+                                                <td>Bengali Honours (SKBU)</td>
+                                                <td align="center">
+                                                    <a href="https://admin.manbhummv.ac.in/file/dept_syll/11dept_syll.pdf"
+                                                        target="_blank"><img src="images/download.jpg" align="center"
+                                                            width="20px" height="20px"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="1px">2
+                                                <td>English</td>
+                                                <td>English Honours</td>
+                                                <td align="center">
+                                                    <a href="https://admin.manbhummv.ac.in/file/dept_syll/8dept_syll.pdf"
+                                                        target="_blank"><img src="images/download.jpg" align="center"
+                                                            width="20px" height="20px"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="1px">3
+                                                <td>English</td>
+                                                <td>English General</td>
+                                                <td align="center">
+                                                    <a href="https://admin.manbhummv.ac.in/file/dept_syll/9dept_syll.pdf"
+                                                        target="_blank"><img src="images/download.jpg" align="center"
+                                                            width="20px" height="20px"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="1px">4
+                                                <td>Santali</td>
+                                                <td>B.A.-SANTALI (HONS.)</td>
+                                                <td align="center">
+                                                    <a href="https://admin.manbhummv.ac.in/file/dept_syll/14dept_syll.pdf"
+                                                        target="_blank"><img src="images/download.jpg" align="center"
+                                                            width="20px" height="20px"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="1px">5
+                                                <td>Santali</td>
+                                                <td>B.A.-SANTALI (GEN.)</td>
+                                                <td align="center">
+                                                    <a href="https://admin.manbhummv.ac.in/file/dept_syll/15dept_syll.pdf"
+                                                        target="_blank"><img src="images/download.jpg" align="center"
+                                                            width="20px" height="20px"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="1px">6
+                                                <td>Sanskrit</td>
+                                                <td>Sankrit-General</td>
+                                                <td align="center">
+                                                    <a href="https://admin.manbhummv.ac.in/file/dept_syll/10dept_syll.pdf"
+                                                        target="_blank"><img src="images/download.jpg" align="center"
+                                                            width="20px" height="20px"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="1px">7
+                                                <td>Sanskrit</td>
+                                                <td>B.A.- SANSKRIT (GEN.)</td>
+                                                <td align="center">
+                                                    <a href="https://admin.manbhummv.ac.in/file/dept_syll/16dept_syll.pdf"
+                                                        target="_blank"><img src="images/download.jpg" align="center"
+                                                            width="20px" height="20px"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="1px">8
+                                                <td>History</td>
+                                                <td>B.A.-HISTORY (HONS.)</td>
+                                                <td align="center">
+                                                    <a href="https://admin.manbhummv.ac.in/file/dept_syll/17dept_syll.pdf"
+                                                        target="_blank"><img src="images/download.jpg" align="center"
+                                                            width="20px" height="20px"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="1px">9
+                                                <td>History</td>
+                                                <td>B.A.-HISTORY (GEN.)</td>
+                                                <td align="center">
+                                                    <a href="https://admin.manbhummv.ac.in/file/dept_syll/18dept_syll.pdf"
+                                                        target="_blank"><img src="images/download.jpg" align="center"
+                                                            width="20px" height="20px"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="1px">10
+                                                <td>Computer Science</td>
+                                                <td>B.Sc. Comp. Sc. (Hons.)</td>
+                                                <td align="center">
+                                                    <a href="https://admin.manbhummv.ac.in/file/dept_syll/12dept_syll.pdf"
+                                                        target="_blank"><img src="images/download.jpg" align="center"
+                                                            width="20px" height="20px"></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+
+                                </div>
+                            </div>
+
+                            <div id="tab2" class="tab">
+                                <form method="post" action="" name="form" enctype="multipart/form-data" class="faculty">
+                                    <div class="left">
+                                        <p><label>Semester</label>
+                                            <select name="semester" id="semester" class="semester">
+                                                <option value="">--Select--</option>
+                                                <option value="1">1st Year</option>
+                                                <option value="2">2nd Year</option>
+                                                <option value="3">3rd Year</option>
+                                            </select>
+
+                                            <label>Department</label>
+                                            <select name="department_key" id="department_key" class="department_key">
+                                                <option value="">--Select--</option>
+                                                <option value="1">Bengali</option>
+                                                <option value="2">English</option>
+                                                <option value="3">Santali</option>
+                                                <option value="4">Sanskrit</option>
+                                                <option value="5">Education</option>
+                                                <option value="6">History</option>
+                                                <option value="7">Geography</option>
+                                                <option value="8">Political Sciene</option>
+                                                <option value="9">Sociology</option>
+                                                <option value="10">Physical Education</option>
+                                                <option value="11">Economics</option>
+                                                <option value="12">Commerce</option>
+                                                <option value="13">Computer Science</option>
+                                                <option value="14">Mathematics</option>
+                                                <option value="15">Physics</option>
+                                                <option value="16">Chemistry</option>
+                                                <option value="17">Botany</option>
+                                                <option value="18">Zoology</option>
+                                                <option value="19">ENVS</option>
+                                            </select>
+                                            <label>&nbsp;&nbsp;</label>
+                                            <input type="submit" name="submit" value="Submit">
+                                        </p>
+                                    </div>
+                                </form>
+                                <div>&nbsp;</div>
+
+                                <div class="repository">
+                                    <table width="100%" border="1" cellspacing="3" cellpadding="3" align="center">
+                                        <thead>
+                                            <th>Sl No.</th>
+                                            <th>Department</th>
+                                            <th>Course</th>
+                                            <th>Semester</th>
+                                            <th>Year</th>
+                                            <th>View</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1
+                                                <td>Bengali</td>
+                                                <td>B.A. GENERAL PAPER-I</td>
+                                                <td>1st Year</td>
+                                                <td>2016</td>
+                                                <td align="center">
+                                                    <a href="https://admin.manbhummv.ac.in/file/pre_year/1pre_year.pdf"
+                                                        target="_blank"><img src="images/download.jpg" align="center"
+                                                            width="20px" height="20px"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2
+                                                <td>English</td>
+                                                <td>B.A. HONOURS PAPER-I</td>
+                                                <td>1st Year</td>
+                                                <td>2016</td>
+                                                <td align="center">
+                                                    <a href="https://admin.manbhummv.ac.in/file/pre_year/2pre_year.pdf"
+                                                        target="_blank"><img src="images/download.jpg" align="center"
+                                                            width="20px" height="20px"></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+
+                            </div>
+
+                            <div id="tab3" class="tab" style="display: none;">
+                                <form method="post" id="myForm" action="" name="form" enctype="multipart/form-data"
+                                    class="faculty">
+                                    <div class="left">
+                                        <p><label>Semester</label>
+                                            <select name="semester_note" id="semester_note" class="semester_note">
+                                                <option value="">--ALL--</option>
+                                                <option value="1">1st Semester</option>
+                                                <option value="2">2nd Semester</option>
+                                                <option value="3">3rd Semester</option>
+                                                <option value="4">4th Semester</option>
+                                                <option value="5">5th Semester</option>
+                                                <option value="6">6th Semester</option>
+                                            </select>
+                                            <label>&nbsp;&nbsp;</label>
+                                            <label>Department</label>
+                                            <select id="department" name="department" class="department">
+                                                <option value="">--ALL--</option>
+                                                <option value="1">Bengali</option>
+                                                <option value="2">English</option>
+                                                <option value="3">Santali</option>
+                                                <option value="4">Sanskrit</option>
+                                                <option value="5">Education</option>
+                                                <option value="6">History</option>
+                                                <option value="7">Geography</option>
+                                                <option value="8">Political Sciene</option>
+                                                <option value="9">Sociology</option>
+                                                <option value="10">Physical Education</option>
+                                                <option value="11">Economics</option>
+                                                <option value="12">Commerce</option>
+                                                <option value="13">Computer Science</option>
+                                                <option value="14">Mathematics</option>
+                                                <option value="15">Physics</option>
+                                                <option value="16">Chemistry</option>
+                                                <option value="17">Botany</option>
+                                                <option value="18">Zoology</option>
+                                                <option value="19">ENVS</option>
+                                            </select>
+                                            <label>&nbsp;&nbsp;</label>
+                                            <label>Teacher Name</label>
+                                            <select id="staff_key" name="staff_key" class="staff_key">
+                                                <option value="">--ALL--</option>
+                                            </select>
+                                            <label>&nbsp;&nbsp;</label>
+                                            <input type="submit" name="submit" value="Search">
+                                        </p>
+                                    </div>
+                                </form>
+                                <div>&nbsp;</div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--middle-panel End -->
+                </div>
+                <!--footer start-->
+            </div>
+            <div class="footer">Developed By :: <a href="https://pabitrabanerjee.newsgoogle.org"><span>Pabitra
+                        Banerjee</span></a> || Made With ❤️</div>
+        </div>
+
+        <!--footer end-->
+    </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
